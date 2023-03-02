@@ -2,10 +2,10 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - "deployment.yaml"
-  - "service.yaml"
+- deployment.yaml
+- service.yaml
 
 images:
 - name: goserver
   newName: juniorsdj/gitops
-  newTag: newtag-newtag
+  newTag: 9cd2740392f69691f763e336cf331a5b43a4814c
